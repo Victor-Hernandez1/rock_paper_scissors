@@ -43,8 +43,8 @@
 		var finalResult = ""
 		var play = 1;
 		for (var i = 0; i < 5; i++) {
+			var playerChoice = prompt("Choose rock, paper, or scissors\nComputer: " + computerChoice + "\nPlayer choice: " + playerChoice);
 			var computerChoice = computerPlay();
-			var playerChoice = prompt("Choose rock, paper, or scissors\nplay: " + play);
 			playRound(playerChoice, computerChoice);
 			if (result === "Player wins!") {
 				playerScore++;
